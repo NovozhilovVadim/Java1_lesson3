@@ -6,13 +6,21 @@ public class gameNumbers {
     private static int computer;
 
     public static void main(String[] args) {
-        computer = randomNumber();
-        System.out.println(computer);
-        userNumber();
-        System.out.println(user);
-        if(checkNumber(user, computer)){
-            System.out.println("You WIN!");
-        }else System.out.println("You Lose. Try again.");
+        while (true){
+            computer = randomNumber();
+            System.out.println("Computer number " + computer);
+            for (int i = 0; i <= 5; i++) {
+                userNumber();
+                System.out.println(user);
+                if(checkNumber(user, computer)){
+                    System.out.println("You WIN!");
+                    return;
+                }
+            }
+
+
+        }
+
 
 
     }
