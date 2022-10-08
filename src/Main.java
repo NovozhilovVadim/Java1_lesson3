@@ -22,7 +22,7 @@ char a = str.charAt(0); - метод вернет char, который стои�
      */
 
     public static void main(String[] args) {
+        gameNumbers.startGame();
 
     }
-
 }
